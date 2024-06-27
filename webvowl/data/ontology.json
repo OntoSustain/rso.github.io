@@ -1,0 +1,2597 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.fortiss.org/diprolea/ontosustain/rso", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://qudt.org/schema/qudt", "https://qudt.org/schema/qudt", "http://www.w3.org/2002/07/owl", "http://www.w3.org/ns/org", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "en" : "The Sustainability Report Standard Ontology"
+    },
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "version" : "0.1.0",
+    "author" : [ "https://orcid.org/0009-0003-0305-9622" ],
+    "description" : {
+      "en" : "RSO is designed  for mapping quantitative environmental indicators from the two significant sustainability reporting standards, GRI and ESRS. It formally represents (1) the classification and provenance information of indicators in the GRI and ESRS standards; (2) the requirements for indicators. RSO is envisioned to be integrated into the SME digital infrastructure. Accompanied by suitable digital infrastructure, the reporting system leveraging RSO as a knowledge base will empower the daily tasks of sustainability managers."
+    },
+    "labels" : {
+      "en" : "The Sustainability Reporting Standard Ontology"
+    },
+    "comments" : {
+      "en" : "RSO is designed for mapping quantitative environmental indicators from the two significant sustainability reporting standards, GRI and ESRS. It formally represents (1) the classification and provenance information of indicators in the GRI and ESRS standards; (2) the requirements for indicators. RSO is envisioned to be integrated into the SME digital infrastructure. Accompanied by suitable digital infrastructure, the reporting system leveraging RSO as a knowledge base will empower the daily tasks of sustainability managers."
+    },
+    "other" : {
+      "versionIRI" : [ {
+        "identifier" : "versionIRI",
+        "language" : "undefined",
+        "value" : "http://www.fortiss.org/diprolea/ontosustain/rso/0.1.0",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://orcid.org/0009-0003-0305-9622",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "https://orcid.org/0000-0002-5881-3608",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "https://orcid.org/0009-0006-1763-7544",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2023-12-01",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "rso",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "en",
+        "value" : "fortissGmbH, Platfrom Engineering Group",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1.0",
+        "type" : "label"
+      } ],
+      "abstract" : [ {
+        "identifier" : "abstract",
+        "language" : "en",
+        "value" : "Sustainability reporting by Small and Medium Enterprises (SMEs) is gaining importance. SMEs form the backbone of European industries, and their customers rely on them to ensure regulatory compliance. In preparing sustainability reports, a combination of standards is commonly used, which encompasses overlapping yet distinct requirements on sustainability indicators. Different standards categorize shared indicators under varying topics, while they also mandate unique indicators to assess identical sustainability phenomena. This poses challenges for SMEs in reporting against multiple standards. Considerable human efforts are demanded to determine the interconnected requirements across different standards. Additionally, reporting on overlapping indicators for new standards results in significant redundant work. Mapping of indicators between different standards allows the semantic interoperability of standards by indicating matching and distinct requirements, aiding in addressing these challenges. The purpose of RSO is to facilitate the interoperability of sustainability standards by indicating the matching and distinct indicators. Indicator mapping will provide further information such as: which report data can be reused for another standard, what distinct requirements exist for the overlapping indicators in two standards, and which distinct indicators are required for the same topic/subtopic by different standards.",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://www.fortiss.org/diprolea/ontosustain/rso#",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "The Sustainability Report Standard Ontology",
+        "type" : "label"
+      } ],
+      "url" : [ {
+        "identifier" : "url",
+        "language" : "undefined",
+        "value" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "66",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "68",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "18",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "113",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "115",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "132",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "99",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#Variable",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Sustainability Variable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Variable",
+      "en" : "Sustainability Variable"
+    },
+    "subClasses" : [ "1", "2", "3", "4" ],
+    "comment" : {
+      "en" : "A variable encompasses a hierarchy of subtopics within specific sustainability areas. It represents a measurable value of a phenomenon, like 'total energy consumption'."
+    },
+    "id" : "0"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#GRIEnvironmentTopic",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "GRI Environment Topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GRIEnvironmentTopic",
+      "en" : "GRI Environment Topic"
+    },
+    "comment" : {
+      "undefined" : "GRI topics derived from the GRI standards describing the environmental dimension."
+    },
+    "id" : "9",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#StandardSet",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Standard Set",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "StandardSet",
+      "en" : "Standard Set"
+    },
+    "comment" : {
+      "en" : "Models a series of sustainability reporting standards."
+    },
+    "id" : "11"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#Topic",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Sustainability Topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Topic",
+      "en" : "Sustainability Topic"
+    },
+    "subClasses" : [ "13", "10", "14" ],
+    "comment" : {
+      "en" : "delineates sustainability issues."
+    },
+    "id" : "12"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#ESRSUniversalStandard",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "ESRS Universal Standard",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ESRSUniversalStandard",
+      "en" : "ESRS Universal Standard"
+    },
+    "comment" : {
+      "en" : "ESRS universal standards provide general reporting concepts and overarching disclosure requirements that apply across all undertakings, regardless of the sector they operate in."
+    },
+    "id" : "19",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#GRITopicStandard",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "GRI Topic Standard",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GRITopicStandard",
+      "en" : "GRI Topic Standard"
+    },
+    "comment" : {
+      "en" : "The Topic Standards contain disclosures that the organization uses to report information about its impacts in relation to particular topics. The organization uses the Topic Standards according to the list of material topics it has determined using GRI 3."
+    },
+    "id" : "21",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/Unit",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Unit"
+    },
+    "attributes" : [ "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#EmissionIndicator",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Emission Indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EmissionIndicator",
+      "en" : "Emission Indicator"
+    },
+    "intersection" : [ "25" ],
+    "comment" : {
+      "en" : "Indicators measure the emission topic."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#Emission",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Emission",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Emission",
+      "en" : "Emission"
+    },
+    "comment" : {
+      "en" : "A variable that quantifies emissions."
+    },
+    "id" : "4",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#GRIUniversalStandard",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "GRI Universal Standard",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GRIUniversalStandard",
+      "en" : "GRI Universal Standard"
+    },
+    "comment" : {
+      "en" : "The Universal Standards defined in GRI standards are: GRI 1, GRI 2 and GRI 3\r\nGRI 1: Foundation 2021 specifies the requirements that the organization must comply with to report in accordance with the GRI Standards. The organization begins using the GRI Standards by consulting GRI 1.\r\nGRI 2: General Disclosures 2021 contains disclosures that the organization uses to provide information about its reporting practices and other organizational details, such as its activities, governance, and policies.\r\nGRI 3: Material Topics 2021 provides guidance on how to determine material topics. It also contains disclosures that the organization uses to report information about its process of determining material topics, its list of material topics, and how it manages each topic."
+    },
+    "id" : "47",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#MaterialIndicator",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Material Indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MaterialIndicator",
+      "en" : "Material Indicator"
+    },
+    "intersection" : [ "25" ],
+    "comment" : {
+      "en" : "Indicators measure the material topic."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#ESRSTopic",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "ESRS Topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ESRSTopic",
+      "en" : "ESRS Topic"
+    },
+    "subClasses" : [ "29", "27", "16" ],
+    "comment" : {
+      "en" : "ESRS topics derived from the ESRS standards."
+    },
+    "id" : "14",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#ReportValue",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Sustainability Report Value",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ReportValue",
+      "en" : "Sustaianbility Report Value"
+    },
+    "comment" : {
+      "en" : "Provides a structure to represent a single report data. Each data contains a numerical value and a measurement unit and is linked to a specific indicator."
+    },
+    "id" : "56",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#EnergyIndicator",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Energy Indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EnergyIndicator",
+      "en" : "Energy Indicator"
+    },
+    "intersection" : [ "25" ],
+    "comment" : {
+      "en" : "Indicators that measure the energy topic."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#GRIStandard",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "GRI Standard",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GRIStandard",
+      "en" : "GRI Standard"
+    },
+    "subClasses" : [ "47", "21" ],
+    "comment" : {
+      "en" : "A GRI standard is a piece of the GRI Sustainability Reporting Standards (GRI Standards). For example, GRI 301: Materials 2016."
+    },
+    "id" : "22",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#WeightedIndicator",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Weighted Indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WeightedIndicator",
+      "en" : "Weighted Indicator"
+    },
+    "subClasses" : [ "6", "62" ],
+    "comment" : {
+      "en" : "Weighted indicator considers additional factors through weighting."
+    },
+    "id" : "61",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "63",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "31",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#BreakDownValue",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Break Down Value",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BreakDownValue",
+      "en" : "Break Down Value"
+    },
+    "comment" : {
+      "en" : "Breakdown values are crafted to meet the standards' requirements, allowing organizations to dissect a total report value based on specific criteria. \r\nThese breakdown values are linked to specific report values."
+    },
+    "id" : "64",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#ESRSGovernanceTopic",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "ESRS Governance Topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ESRSGovernanceTopic",
+      "en" : "ESRS Governance Topic"
+    },
+    "comment" : {
+      "undefined" : "ESRS topics derived from the ESRS standards describing the governance dimension."
+    },
+    "id" : "27",
+    "superClasses" : [ "14" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "25", "12", "65" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "54"
+  }, {
+    "instances" : 0,
+    "union" : [ "25", "23" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#Value",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Value",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Value",
+      "en" : "Value"
+    },
+    "subClasses" : [ "56", "64" ],
+    "comment" : {
+      "en" : "This class acts as a collective framework for organizing quantitative data within sustainability reports. It encompasses two subclasses:(1) ReportValue, which structures individual data entries including numerical values and units linked to specific indicators, and (2) BreakdownValue, which allows for detailed disaggregation of data according to defined criteria, enhancing data analysis and reporting precision."
+    },
+    "id" : "57"
+  }, {
+    "instances" : 0,
+    "union" : [ "25", "57" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#EnvironmentalIndicator",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Environmental Indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EnvironmentalIndicator",
+      "en" : "Environmental Indicator"
+    },
+    "intersection" : [ "25" ],
+    "comment" : {
+      "en" : "Indicators that measure the environmen dimension of sustainability."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "68"
+  }, {
+    "instances" : 0,
+    "union" : [ "25", "12", "65" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#CoreSocialTopic",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Core Social Topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CoreSocialTopic",
+      "en" : "Core Social Topic"
+    },
+    "comment" : {
+      "en" : "Individuals of CoreSocialTopic are sourced from the GRI standards and encompass specific social issues. This categorization helps in the systematic reporting and evaluation of social topics, focusing on areas such as labor practices, human rights, and community engagement."
+    },
+    "id" : "69",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#EnergyVariable",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Energy",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "EnergyVariable",
+      "en" : "Energy"
+    },
+    "comment" : {
+      "en" : "A variable that quantifies energy metrics."
+    },
+    "id" : "1",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#ESGDimension",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "ESG Dimension",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ESGDimension",
+      "en" : "ESG Dimension"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#Social",
+      "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Social (S)",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Under the Social dimension, companies report on how they manage their employee development and labour practices."
+      },
+      "labels" : {
+        "IRI-based" : "Social",
+        "en" : "Social (S)"
+      }
+    }, {
+      "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#Environment",
+      "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Environmental (E)",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Emissions such as greenhouse gases and air, water and ground pollution emissions falls under the Environmental dimension of sustainability."
+      },
+      "labels" : {
+        "IRI-based" : "Environment",
+        "en" : "Environmental (E)"
+      }
+    }, {
+      "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#Governance",
+      "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "undefined",
+          "value" : "Coporate Governance (G)",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "The main issues reported under the Governance Pillar are shareholders rights, board diversity, how executives are compensated and how their compensation is aligned with the company’s sustainability performance. It also includes matters of corporate behaviour such as anti-competitive practices and corruption."
+      },
+      "labels" : {
+        "IRI-based" : "Governance",
+        "en" : "Coporate Governance (G)"
+      }
+    } ],
+    "comment" : {
+      "en" : "Covers the three dimensions of sustainability and is defined as enumerated class."
+    },
+    "id" : "79"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#ESRSTopicalStandard",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "ESRS Topical Standard",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ESRSTopicalStandard",
+      "en" : "ESRS Topical Standard"
+    },
+    "comment" : {
+      "en" : "ESRS topical standards provide detailed disclosure requirements across environmental (E), social (S), and governance (G) topics. Environmental (E) topic focus on aspects related to environmental impact, such as climate change, biodiversity, and resource use. Social (S) standards address social matters, including human rights, labor practices, and community engagement.Governance (G) standards pertain to governance practices, board structures, and transparency."
+    },
+    "id" : "80",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#Applicability",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Indicator Requirement Applicability",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Applicability",
+      "en" : "Indicator Requirement Applicability"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#enumerated",
+      "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "enumerated",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "An enumerated requirement is described as \"the organization shall report on the information of A or B of a phenomenon\".\r\nFor example, \"the reporting organization shall report the following information: total weight or volume of materials that are used to produce .....\", refering to GRI 301-1."
+      },
+      "labels" : {
+        "IRI-based" : "enumerated",
+        "en" : "enumerated"
+      }
+    }, {
+      "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#mandatory",
+      "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "mandatory",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "A mandatory requirement for an indicator is indicated by the word \"shall\" in the requirement description."
+      },
+      "labels" : {
+        "IRI-based" : "mandatory",
+        "en" : "mandatory"
+      }
+    }, {
+      "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#optional",
+      "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "optional",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "An optional requirement for an indicator is indicated by the expression \"if applicable\" in the requirement description."
+      },
+      "labels" : {
+        "IRI-based" : "optional",
+        "en" : "optional"
+      }
+    } ],
+    "comment" : {
+      "en" : "Indicates whether an indicator is required mandatorily or optionally by the corresponding standard."
+    },
+    "id" : "81"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#GRIIndicator",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "GRI Indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GRIIndicator",
+      "en" : "GRI Indicator"
+    },
+    "comment" : {
+      "en" : "Indicators derived from the GRI standards."
+    },
+    "id" : "82",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#GRITopic",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "GRI Topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GRITopic",
+      "en" : "GRI Topic"
+    },
+    "subClasses" : [ "9", "74", "71" ],
+    "comment" : {
+      "en" : "GRI topics derived from the GRI standards."
+    },
+    "id" : "10",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#ESRSSocialTopic",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "ESRS Social Topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ESRSSocialTopic",
+      "en" : "ESRS Social Topic"
+    },
+    "comment" : {
+      "undefined" : "ESRS topics derived from the ESRS standards describing the social dimension."
+    },
+    "id" : "29",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#ESRSIndicator",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "ESRS Indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ESRSIndicator",
+      "en" : "ESRS Indicator"
+    },
+    "comment" : {
+      "en" : "Indicators derived from the ESRS standards."
+    },
+    "id" : "34",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#CoreGovernanceTopic",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Core Governance Topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CoreGovernanceTopic",
+      "en" : "Core Governance Topic"
+    },
+    "comment" : {
+      "en" : "Individuals of CoreGovernanceTopic are based on the GRI standards and represent unique governance concerns. These topics facilitate the categorization of governance-related indicators, promoting transparency and accountability in corporate governance practices."
+    },
+    "id" : "76",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/QuantityKind",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "QuantityKind"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#SocialIndicator",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Social indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SocialIndicator",
+      "en" : "Social indicator"
+    },
+    "intersection" : [ "25" ],
+    "comment" : {
+      "en" : "Indicators measure the social dimension of sustainability."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "102"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#Disclosure",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Disclosure",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Disclosure",
+      "en" : "Disclosure"
+    },
+    "subClasses" : [ "97", "95" ],
+    "comment" : {
+      "en" : "Covers indicators that allow an organization to report information about sustainability issues. This class is further subdivided into GRIDisclosure and ESRSDisclosureRequirement based on terms used in each standard respectively."
+    },
+    "id" : "65"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#GRISocialTopic",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "GRI Social Topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GRISocialTopic",
+      "en" : "GRI Social Topic"
+    },
+    "comment" : {
+      "en" : "GRI topics derived from the GRI standards describing the social dimension."
+    },
+    "id" : "71",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#WasteIndicator",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Waste Indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WasteIndicator",
+      "en" : "Waste Indicator"
+    },
+    "intersection" : [ "25" ],
+    "comment" : {
+      "en" : "Indicators measure the waste topic."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#ESRSEnvironmentTopic",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "ESRS Environment Topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ESRSEnvironmentTopic",
+      "en" : "ESRS Environment Topic"
+    },
+    "comment" : {
+      "undefined" : "ESRS topics derived from the ESRS standards describing the environmental dimension."
+    },
+    "id" : "16",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/org#Organization",
+    "baseIri" : "http://www.w3.org/ns/org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization"
+    },
+    "attributes" : [ "external" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#GRIDisclosure",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://www.globalreporting.org/pdf.ashx?id=12334",
+        "type" : "label"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "GRI Disclosure",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GRIDisclosure",
+      "en" : "GRI Disclosure"
+    },
+    "comment" : {
+      "en" : "The GRI Standards contain disclosures that allow an organization to report information about its impacts consistently and\r\ncredibly."
+    },
+    "id" : "97",
+    "superClasses" : [ "65" ]
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#ESRSStandard",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "ESRS Standard",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ESRSStandard",
+      "en" : "ESRS Standard"
+    },
+    "subClasses" : [ "19", "80" ],
+    "comment" : {
+      "en" : "A piece of the sustainability reporting standard derived from the ESRS."
+    },
+    "id" : "20",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#CoreEnvironmentTopic",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Core Environment Topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CoreEnvironmentTopic",
+      "en" : "Core Environment Topic"
+    },
+    "comment" : {
+      "en" : "Individuals of CoreEnvironmentalTopic derive from the GRI standards and represent specific environmental issues. This classification aids in organizing and addressing distinct environmental aspects through targeted indicators."
+    },
+    "id" : "86",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#PercentageIndicator",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Percentage Indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PercentageIndicator",
+      "en" : "Percentage Indicator"
+    },
+    "comment" : {
+      "en" : "A percentage indicator shares the same quantity kind on both numerator and denominator."
+    },
+    "id" : "62",
+    "superClasses" : [ "61" ]
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#GRIGovernanceTopic",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "GRI Governance Topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GRIGovernanceTopic",
+      "en" : "GRI Governance Topic"
+    },
+    "comment" : {
+      "en" : "GRI topics derived from the GRI standards describing the governance dimension."
+    },
+    "id" : "74",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#IntensityIndicator",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Intensity Indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IntensityIndicator",
+      "en" : "Intensity Indicator"
+    },
+    "comment" : {
+      "undefined" : "An intensity indicator has different quantity kinds and units on numerator and denominator."
+    },
+    "id" : "6",
+    "superClasses" : [ "61" ]
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#CorporateGovernanceIndicator",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Corporate governance indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CorporateGovernanceIndicator",
+      "en" : "Corporate governance indicator"
+    },
+    "intersection" : [ "25" ],
+    "comment" : {
+      "en" : "Indicators measure the corporate governance dimension of sustainability."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#Report",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Sustainability Report",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Report",
+      "en" : "Sustainability Report"
+    },
+    "comment" : {
+      "en" : "Represents the annual sustainability report published by a certain organization and complies with certain standards."
+    },
+    "id" : "99"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#Indicator",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Sustainability Indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Indicator",
+      "en" : "Sustainability Indicator"
+    },
+    "subClasses" : [ "49", "61", "34", "82" ],
+    "comment" : {
+      "en" : "A single measure from which conclusions on the phenomenon of interest can be inferred."
+    },
+    "id" : "25"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#CoreTopic",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Core Topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CoreTopic",
+      "en" : "Core Topic"
+    },
+    "subClasses" : [ "69", "86", "76" ],
+    "comment" : {
+      "en" : "Individuals of CoreTopic are borrowed from the GRI standards which represents a singular environmental issue, facilitating indicator classification."
+    },
+    "id" : "13",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#AbsoluteIndicator",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Absolute Indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AbsoluteIndicator",
+      "en" : "Absolute Indicator"
+    },
+    "comment" : {
+      "en" : "Absolute indicator represents the total quantity of a phenomenon."
+    },
+    "id" : "49",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#Standard",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Sustainability Standard",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Standard",
+      "en" : "Sustainability Standard"
+    },
+    "subClasses" : [ "22", "20" ],
+    "comment" : {
+      "en" : "A sustainability reporting standard is a piece of standard that is defined by a specific standard setter. For example, the standard GRI 301: Materials 2016 is part of the GRI Sustainability Reporting Standards (GRI Standards).\r\nThis class is defined as the super class for subclasses."
+    },
+    "id" : "55"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#ESRSDisclosureRequirement",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://www.efrag.org/Assets/Download?assetUrl=%2Fsites%2Fwebpublishing%2FSiteAssets%2F06%2520Draft%2520ESRS%25201%2520General%2520requirements%2520November%25202022.pdf",
+        "type" : "label"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "ESRS Disclosure Requirement",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ESRSDisclosureRequirement",
+      "en" : "ESRS Disclosure Requirement"
+    },
+    "comment" : {
+      "en" : "ESRS structure the information to be disclosed under Disclosure Requirements.\r\nDisclosure Requirements consist of more granular datapoints. The term “datapoint” in this context also refers to a narrative sub-element of a Disclosure Requirement."
+    },
+    "id" : "95",
+    "superClasses" : [ "65" ]
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#Waste",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Waste",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Waste",
+      "en" : "Waste"
+    },
+    "comment" : {
+      "en" : "A variable that quantifies waste metrics."
+    },
+    "id" : "2",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#Material",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Material",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Material",
+      "en" : "Material"
+    },
+    "comment" : {
+      "en" : "A variable that quantifies material usage."
+    },
+    "id" : "3",
+    "superClasses" : [ "0" ]
+  } ],
+  "property" : [ {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "72",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "73",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "98",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "103",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "119",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "120",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "121",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "123",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "124",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "125",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "126",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "127",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "128",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "129",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "131",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#hasNumeratorQuantityKind",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "range" : "7",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has Numerator Quantity Kind",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasNumeratorQuantityKind",
+      "en" : "has Numerator Quantity Kind"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "6",
+    "comment" : {
+      "en" : "This property relates the intensity indicator with the required quantity kind of the numerator derived from the sustainability standards."
+    },
+    "attributes" : [ "object" ],
+    "id" : "5"
+  }, {
+    "range" : "14",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#isDefinedBy",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "range" : "11",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "is Defined By",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isDefinedBy",
+      "en" : "is Defined By"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "This property relates an indicator or a piece of standard with the specific standard set (either GRI or ESRS) that defines it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "17"
+  }, {
+    "range" : "14",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "26"
+  }, {
+    "range" : "14",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "31",
+    "subproperty" : [ "32" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#measuresESRSTopic",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "range" : "14",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "measures ESRS Topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measuresESRSTopic",
+      "en" : "measures ESRS Topic"
+    },
+    "superproperty" : [ "35" ],
+    "domain" : "34",
+    "comment" : {
+      "en" : "This property relates the indicator with certain ESRS Topic that the indicator measures."
+    },
+    "attributes" : [ "object" ],
+    "id" : "33"
+  }, {
+    "range" : "12",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "36"
+  }, {
+    "range" : "0",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#hasSiblingIndicator",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "range" : "25",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has Sibling Indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSiblingIndicator",
+      "en" : "has Sibling Indicator"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "25",
+    "comment" : {
+      "en" : "This property relates the indicators defined by the same standard setter with the same measurement variable but different quantity kind. This property is defined as a symmetric property."
+    },
+    "attributes" : [ "symmetric", "object" ],
+    "id" : "32"
+  }, {
+    "range" : "12",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "38"
+  }, {
+    "range" : "12",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "range" : "0",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "40"
+  }, {
+    "range" : "0",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#hasMeasurementVariable",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "range" : "0",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has Measurement Variable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMeasurementVariable",
+      "en" : "has Measurement Variable"
+    },
+    "domain" : "25",
+    "subproperty" : [ "44", "45" ],
+    "comment" : {
+      "en" : "This property relates the indicator with the measurement variable (object) derived from the sustainability standards."
+    },
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "range" : "0",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#hasCalculationVariable",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "range" : "0",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has Calculation Variable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCalculationVariable",
+      "en" : "has Calculation Variable"
+    },
+    "domain" : "49",
+    "subproperty" : [ "50", "51" ],
+    "comment" : {
+      "en" : "This property relates the indicator to the required variables for calculating its value, as defined by mathematical functions in the sustainability standards."
+    },
+    "attributes" : [ "object" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#inStandard",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "range" : "55",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "in sustainability standard",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "inStandard",
+      "en" : "in sustainability standard"
+    },
+    "domain" : "54",
+    "comment" : {
+      "en" : "This property relates an indicator, a topic,  or a disclosure / disclosure requirement with the specific piece of either GRI standard or ESRS standard that defines this indicator or this disclosure."
+    },
+    "attributes" : [ "object" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#hasNegativeVariable",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "range" : "0",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has Negative Variable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasNegativeVariable",
+      "en" : "has Negative Variable"
+    },
+    "superproperty" : [ "48" ],
+    "domain" : "49",
+    "comment" : {
+      "en" : "This property relates the indicator to the required variables for calculating its value, if the defined mathematical symbol is minus."
+    },
+    "attributes" : [ "object" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#hasDenominatorQuantityKind",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "range" : "7",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has Denominator Quantity Kind",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDenominatorQuantityKind",
+      "en" : "has Denominator Quantity Kind"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "6",
+    "comment" : {
+      "en" : "This property relates the intensity indicator with the required quantity kind of the denominator derived from the sustainability standards."
+    },
+    "attributes" : [ "object" ],
+    "id" : "59"
+  }, {
+    "range" : "71",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "70"
+  }, {
+    "range" : "47",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "72"
+  }, {
+    "range" : "71",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "73"
+  }, {
+    "range" : "13",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "75"
+  }, {
+    "range" : "55",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "77"
+  }, {
+    "range" : "55",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "78"
+  }, {
+    "range" : "25",
+    "domain" : "82",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "83"
+  }, {
+    "range" : "25",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "84"
+  }, {
+    "range" : "13",
+    "domain" : "86",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "85"
+  }, {
+    "range" : "13",
+    "domain" : "69",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#measuresTopic",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "range" : "12",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "measures sustainability topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measuresTopic",
+      "en" : "measures sustainability topic"
+    },
+    "domain" : "25",
+    "subproperty" : [ "88", "33", "89" ],
+    "comment" : {
+      "en" : "This property relates the indicator with specific sustainability topic that the indicator measures."
+    },
+    "attributes" : [ "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#measuresCoreTopic",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "range" : "13",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "measures Core topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measuresCoreTopic",
+      "en" : "measures Core topic"
+    },
+    "superproperty" : [ "35" ],
+    "domain" : "25",
+    "comment" : {
+      "en" : "This property relates the indicator with certain Core Topic that the indicator measures."
+    },
+    "attributes" : [ "object" ],
+    "id" : "89"
+  }, {
+    "range" : "20",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "90"
+  }, {
+    "range" : "20",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "91"
+  }, {
+    "range" : "25",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "92"
+  }, {
+    "range" : "25",
+    "domain" : "49",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "93"
+  }, {
+    "range" : "65",
+    "domain" : "95",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "94"
+  }, {
+    "range" : "65",
+    "domain" : "97",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#hasReportValue",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "range" : "56",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has report value",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasReportValue",
+      "en" : "has report value"
+    },
+    "domain" : "99",
+    "comment" : {
+      "en" : "This property links the sustainability report with the report value."
+    },
+    "attributes" : [ "object" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#hasYear",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "range" : "60",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has Year",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasYear",
+      "en" : "has Year"
+    },
+    "domain" : "99",
+    "comment" : {
+      "en" : "This property links the sustainability report to its publication year."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "100"
+  }, {
+    "range" : "10",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "31",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "103"
+  }, {
+    "range" : "57",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "104"
+  }, {
+    "range" : "57",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "105"
+  }, {
+    "range" : "10",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "106"
+  }, {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "107"
+  }, {
+    "range" : "22",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "108"
+  }, {
+    "range" : "22",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#inDisclosure",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "range" : "97",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "in GRI Disclosure",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "inDisclosure",
+      "en" : "in GRI Disclosure"
+    },
+    "domain" : "82",
+    "comment" : {
+      "en" : "This property relates a GRI indicator with the corresponding disclosure that defines this indicator in the GRI standards."
+    },
+    "attributes" : [ "object" ],
+    "id" : "110"
+  }, {
+    "range" : "61",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "111"
+  }, {
+    "range" : "61",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#hasDenominatorVariable",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "range" : "0",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has Denominator Variable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDenominatorVariable",
+      "en" : "has Denominator Variable"
+    },
+    "superproperty" : [ "43" ],
+    "domain" : "61",
+    "comment" : {
+      "en" : "This property relates the weighted indicator with the measurement variable (object) of the denominator derived from the sustainability standards."
+    },
+    "attributes" : [ "object" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#inDisclosureRequirement",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "range" : "95",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "in ESRS disclosure requirement",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "inDisclosureRequirement",
+      "en" : "in ESRS disclosure requirement"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "User\r\nThis property relates an ESRS indicator with the corresponding ESRS Disclosure Requirement from where this indicator was derived."
+    },
+    "attributes" : [ "object" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#reportsOnIndicator",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "range" : "25",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "reports on indicator",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "reportsOnIndicator",
+      "en" : "reports on indicator"
+    },
+    "domain" : "56",
+    "comment" : {
+      "en" : "This property associates a reported value with the particular indicator derived from the standards, which the value represents."
+    },
+    "attributes" : [ "object" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#hasBreakDownValue",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "range" : "64",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has break down value",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasBreakDownValue",
+      "en" : "has break down value"
+    },
+    "domain" : "56",
+    "comment" : {
+      "en" : "This property links a report value with several break down values."
+    },
+    "attributes" : [ "object" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#hasPositiveVariable",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "range" : "0",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has Positive Variable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPositiveVariable",
+      "en" : "has Positive Variable"
+    },
+    "superproperty" : [ "48" ],
+    "domain" : "49",
+    "comment" : {
+      "en" : "This property relates the indicator to the required variables for calculating its value, if the defined mathematical symbol is plus."
+    },
+    "attributes" : [ "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#measuresGRITopic",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "range" : "10",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "measures GRI Topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measuresGRITopic",
+      "en" : "measures GRI Topic"
+    },
+    "superproperty" : [ "35" ],
+    "domain" : "82",
+    "comment" : {
+      "en" : "This property relates the indicator with certain GRI Topic that the indicator measures."
+    },
+    "attributes" : [ "object" ],
+    "id" : "88"
+  }, {
+    "range" : "69",
+    "domain" : "86",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "118"
+  }, {
+    "range" : "69",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "119"
+  }, {
+    "range" : "27",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "120"
+  }, {
+    "range" : "29",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/hasQuantityKind",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "range" : "7",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has Quantity Kind",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasQuantityKind",
+      "en" : "has Quantity Kind"
+    },
+    "domain" : "66",
+    "subproperty" : [ "59", "5" ],
+    "comment" : {
+      "en" : "This property relates the indicator with the required quantity kind derived from the sustainability standards."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "8"
+  }, {
+    "range" : "29",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "122"
+  }, {
+    "range" : "82",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "123"
+  }, {
+    "range" : "19",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "124"
+  }, {
+    "range" : "74",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "125"
+  }, {
+    "range" : "61",
+    "domain" : "49",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "126"
+  }, {
+    "range" : "76",
+    "domain" : "86",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "127"
+  }, {
+    "iri" : "https://qudt.org/schema/qudt/hasUnit",
+    "baseIri" : "https://qudt.org/schema/qudt",
+    "range" : "23",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has Unit",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasUnit",
+      "en" : "has Unit"
+    },
+    "domain" : "67",
+    "comment" : {
+      "en" : "This property relates the indicator with the required unit derived from the sustainability standards."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "128"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#measuresDimension",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "range" : "79",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "measures ESG dimension",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measuresDimension",
+      "en" : "measures ESG dimension"
+    },
+    "domain" : "25",
+    "comment" : {
+      "en" : "This property relates the indicator with the ESG dimension (either Environmental, Social, or corporate Goverment) that the indicator measures."
+    },
+    "attributes" : [ "object" ],
+    "id" : "129"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#hasNumeratorVariable",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "range" : "0",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has Numerator Variable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasNumeratorVariable",
+      "en" : "has Numerator Variable"
+    },
+    "superproperty" : [ "43" ],
+    "domain" : "61",
+    "comment" : {
+      "en" : "This property relates the weighted indicator with the measurement variable (object) of the numerator derived from the sustainability standards."
+    },
+    "attributes" : [ "object" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#hasNumericalValue",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "range" : "63",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has Numerical Value",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasNumericalValue",
+      "en" : "has Numerical Value"
+    },
+    "domain" : "57",
+    "comment" : {
+      "en" : "This property relates the indicator value with its specific numerical value."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "130"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#publish",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "range" : "99",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "publish",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "publish",
+      "en" : "publish"
+    },
+    "domain" : "115",
+    "comment" : {
+      "en" : "This property links an organization to the sustainability reports published by it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "131"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#hasApplicability",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "range" : "81",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "has applicability",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasApplicability",
+      "en" : "has applicability"
+    },
+    "domain" : "25",
+    "comment" : {
+      "en" : "This property relates the indicator with the indicator applicability derived from the sustainability standards (either mandatory, optional, or enumerated)."
+    },
+    "attributes" : [ "object" ],
+    "id" : "133"
+  } ]
+}
