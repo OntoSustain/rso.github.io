@@ -8,9 +8,9 @@
     },
     "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
     "version" : "0.1.0",
-    "author" : [ "https://orcid.org/0009-0003-0305-9622" ],
+    "author" : [ "Yuchen Zhou" ],
     "description" : {
-      "en" : "RSO is designed  for mapping quantitative environmental indicators from the two significant sustainability reporting standards, GRI and ESRS. It formally represents (1) the classification and provenance information of indicators in the GRI and ESRS standards; (2) the requirements for indicators. RSO is envisioned to be integrated into the SME digital infrastructure. Accompanied by suitable digital infrastructure, the reporting system leveraging RSO as a knowledge base will empower the daily tasks of sustainability managers."
+      "en" : "The ontology defines the representation of environmental indicators in sustainability reporting standards GRI and ESRS."
     },
     "labels" : {
       "en" : "The Sustainability Reporting Standard Ontology"
@@ -34,18 +34,18 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "https://orcid.org/0009-0003-0305-9622",
+        "value" : "Yuchen Zhou",
         "type" : "label"
       } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "https://orcid.org/0000-0002-5881-3608",
+        "value" : "Yuan Cao",
         "type" : "label"
       }, {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "https://orcid.org/0009-0006-1763-7544",
+        "value" : "Alexander Perzylo",
         "type" : "label"
       } ],
       "created" : [ {
@@ -142,7 +142,7 @@
     "id" : "56",
     "type" : "owl:Class"
   }, {
-    "id" : "58",
+    "id" : "59",
     "type" : "owl:intersectionOf"
   }, {
     "id" : "22",
@@ -271,10 +271,10 @@
     "id" : "55",
     "type" : "owl:Class"
   }, {
-    "id" : "95",
+    "id" : "2",
     "type" : "owl:Class"
   }, {
-    "id" : "2",
+    "id" : "95",
     "type" : "owl:Class"
   }, {
     "id" : "3",
@@ -571,7 +571,7 @@
       "en" : "Indicators that measure the energy topic."
     },
     "attributes" : [ "intersection" ],
-    "id" : "58"
+    "id" : "59"
   }, {
     "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#GRIStandard",
     "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
@@ -682,12 +682,12 @@
   }, {
     "instances" : 0,
     "union" : [ "25", "12", "65" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "54"
   }, {
     "instances" : 0,
     "union" : [ "25", "23" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "66"
   }, {
     "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#Value",
@@ -713,7 +713,7 @@
   }, {
     "instances" : 0,
     "union" : [ "25", "57" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "67"
   }, {
     "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#EnvironmentalIndicator",
@@ -740,7 +740,7 @@
   }, {
     "instances" : 0,
     "union" : [ "25", "12", "65" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "18"
   }, {
     "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#CoreSocialTopic",
@@ -1447,6 +1447,27 @@
     },
     "id" : "55"
   }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#Waste",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "instances" : 0,
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Waste",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Waste",
+      "en" : "Waste"
+    },
+    "comment" : {
+      "en" : "A variable that quantifies waste metrics."
+    },
+    "id" : "2",
+    "superClasses" : [ "0" ]
+  }, {
     "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#ESRSDisclosureRequirement",
     "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
     "instances" : 0,
@@ -1473,27 +1494,6 @@
     },
     "id" : "95",
     "superClasses" : [ "65" ]
-  }, {
-    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#Waste",
-    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
-    "instances" : 0,
-    "annotations" : {
-      "prefLabel" : [ {
-        "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Waste",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "Waste",
-      "en" : "Waste"
-    },
-    "comment" : {
-      "en" : "A variable that quantifies waste metrics."
-    },
-    "id" : "2",
-    "superClasses" : [ "0" ]
   }, {
     "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#Material",
     "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
@@ -1574,7 +1574,7 @@
     "id" : "51",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "59",
+    "id" : "58",
     "type" : "owl:objectProperty"
   }, {
     "id" : "70",
@@ -1607,10 +1607,10 @@
     "id" : "87",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "35",
+    "id" : "88",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "89",
+    "id" : "35",
     "type" : "owl:objectProperty"
   }, {
     "id" : "90",
@@ -1685,7 +1685,7 @@
     "id" : "50",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "88",
+    "id" : "89",
     "type" : "owl:objectProperty"
   }, {
     "id" : "118",
@@ -1724,10 +1724,10 @@
     "id" : "128",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "129",
+    "id" : "45",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "45",
+    "id" : "129",
     "type" : "owl:objectProperty"
   }, {
     "id" : "130",
@@ -1765,7 +1765,7 @@
   }, {
     "range" : "14",
     "domain" : "16",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "15"
   }, {
     "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#isDefinedBy",
@@ -1792,12 +1792,12 @@
   }, {
     "range" : "14",
     "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "26"
   }, {
     "range" : "14",
     "domain" : "29",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "28"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
@@ -1836,12 +1836,12 @@
   }, {
     "range" : "12",
     "domain" : "13",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "36"
   }, {
     "range" : "0",
     "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "37"
   }, {
     "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#hasSiblingIndicator",
@@ -1869,22 +1869,22 @@
   }, {
     "range" : "12",
     "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "38"
   }, {
     "range" : "12",
     "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "39"
   }, {
     "range" : "0",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "40"
   }, {
     "range" : "0",
     "domain" : "3",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "42"
   }, {
     "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#hasMeasurementVariable",
@@ -1912,7 +1912,7 @@
   }, {
     "range" : "0",
     "domain" : "2",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "46"
   }, {
     "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#hasCalculationVariable",
@@ -2004,80 +2004,57 @@
       "en" : "This property relates the intensity indicator with the required quantity kind of the denominator derived from the sustainability standards."
     },
     "attributes" : [ "object" ],
-    "id" : "59"
+    "id" : "58"
   }, {
     "range" : "71",
     "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "70"
   }, {
     "range" : "47",
     "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "72"
   }, {
     "range" : "71",
     "domain" : "74",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "73"
   }, {
     "range" : "13",
     "domain" : "76",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "75"
   }, {
     "range" : "55",
     "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "77"
   }, {
     "range" : "55",
     "domain" : "22",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "78"
   }, {
     "range" : "25",
     "domain" : "82",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "83"
   }, {
     "range" : "25",
     "domain" : "34",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "84"
   }, {
     "range" : "13",
     "domain" : "86",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "85"
   }, {
     "range" : "13",
     "domain" : "69",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "87"
-  }, {
-    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#measuresTopic",
-    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
-    "range" : "12",
-    "annotations" : {
-      "prefLabel" : [ {
-        "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "measures sustainability topic",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "measuresTopic",
-      "en" : "measures sustainability topic"
-    },
-    "domain" : "25",
-    "subproperty" : [ "88", "33", "89" ],
-    "comment" : {
-      "en" : "This property relates the indicator with specific sustainability topic that the indicator measures."
-    },
-    "attributes" : [ "object" ],
-    "id" : "35"
   }, {
     "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#measuresCoreTopic",
     "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
@@ -2100,36 +2077,59 @@
       "en" : "This property relates the indicator with certain Core Topic that the indicator measures."
     },
     "attributes" : [ "object" ],
-    "id" : "89"
+    "id" : "88"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#measuresTopic",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "range" : "12",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "measures sustainability topic",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measuresTopic",
+      "en" : "measures sustainability topic"
+    },
+    "domain" : "25",
+    "subproperty" : [ "89", "33", "88" ],
+    "comment" : {
+      "en" : "This property relates the indicator with specific sustainability topic that the indicator measures."
+    },
+    "attributes" : [ "object" ],
+    "id" : "35"
   }, {
     "range" : "20",
     "domain" : "80",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "90"
   }, {
     "range" : "20",
     "domain" : "19",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "91"
   }, {
     "range" : "25",
     "domain" : "61",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "92"
   }, {
     "range" : "25",
     "domain" : "49",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "93"
   }, {
     "range" : "65",
     "domain" : "95",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "94"
   }, {
     "range" : "65",
     "domain" : "97",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "96"
   }, {
     "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#hasReportValue",
@@ -2178,7 +2178,7 @@
   }, {
     "range" : "10",
     "domain" : "71",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "101"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
@@ -2188,37 +2188,37 @@
       "IRI-based" : "topDataProperty"
     },
     "domain" : "31",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "103"
   }, {
     "range" : "57",
     "domain" : "64",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "104"
   }, {
     "range" : "57",
     "domain" : "56",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "105"
   }, {
     "range" : "10",
     "domain" : "74",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "106"
   }, {
     "range" : "10",
     "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "107"
   }, {
     "range" : "22",
     "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "108"
   }, {
     "range" : "22",
     "domain" : "47",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "109"
   }, {
     "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#inDisclosure",
@@ -2245,12 +2245,12 @@
   }, {
     "range" : "61",
     "domain" : "62",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "111"
   }, {
     "range" : "61",
     "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "112"
   }, {
     "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#hasDenominatorVariable",
@@ -2386,26 +2386,26 @@
       "en" : "This property relates the indicator with certain GRI Topic that the indicator measures."
     },
     "attributes" : [ "object" ],
-    "id" : "88"
+    "id" : "89"
   }, {
     "range" : "69",
     "domain" : "86",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "118"
   }, {
     "range" : "69",
     "domain" : "76",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "119"
   }, {
     "range" : "27",
     "domain" : "16",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "120"
   }, {
     "range" : "29",
     "domain" : "16",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "121"
   }, {
     "iri" : "http://qudt.org/schema/qudt/hasQuantityKind",
@@ -2424,7 +2424,7 @@
       "en" : "has Quantity Kind"
     },
     "domain" : "66",
-    "subproperty" : [ "59", "5" ],
+    "subproperty" : [ "58", "5" ],
     "comment" : {
       "en" : "This property relates the indicator with the required quantity kind derived from the sustainability standards."
     },
@@ -2433,32 +2433,32 @@
   }, {
     "range" : "29",
     "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "122"
   }, {
     "range" : "82",
     "domain" : "34",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "123"
   }, {
     "range" : "19",
     "domain" : "80",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "124"
   }, {
     "range" : "74",
     "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "125"
   }, {
     "range" : "61",
     "domain" : "49",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "126"
   }, {
     "range" : "76",
     "domain" : "86",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "127"
   }, {
     "iri" : "https://qudt.org/schema/qudt/hasUnit",
@@ -2483,28 +2483,6 @@
     "attributes" : [ "external", "object" ],
     "id" : "128"
   }, {
-    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#measuresDimension",
-    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
-    "range" : "79",
-    "annotations" : {
-      "prefLabel" : [ {
-        "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "measures ESG dimension",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "measuresDimension",
-      "en" : "measures ESG dimension"
-    },
-    "domain" : "25",
-    "comment" : {
-      "en" : "This property relates the indicator with the ESG dimension (either Environmental, Social, or corporate Goverment) that the indicator measures."
-    },
-    "attributes" : [ "object" ],
-    "id" : "129"
-  }, {
     "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#hasNumeratorVariable",
     "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
     "range" : "0",
@@ -2527,6 +2505,28 @@
     },
     "attributes" : [ "object" ],
     "id" : "45"
+  }, {
+    "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#measuresDimension",
+    "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
+    "range" : "79",
+    "annotations" : {
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "measures ESG dimension",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measuresDimension",
+      "en" : "measures ESG dimension"
+    },
+    "domain" : "25",
+    "comment" : {
+      "en" : "This property relates the indicator with the ESG dimension (either Environmental, Social, or corporate Goverment) that the indicator measures."
+    },
+    "attributes" : [ "object" ],
+    "id" : "129"
   }, {
     "iri" : "http://www.fortiss.org/diprolea/ontosustain/rso#hasNumericalValue",
     "baseIri" : "http://www.fortiss.org/diprolea/ontosustain/rso",
